@@ -1,0 +1,68 @@
+{
+  "name": "tanya-evm-cli",
+  "version": "0.0.1",
+  "description": "Lox-evm Engine command-line interface (CLI).",
+  "type": "module",
+  "module": "lib/lox_evm.js",
+  "main": "lib/lox_evm.js",
+  "types": "lib/lox_evm.d.ts",
+  "files": [
+    "AUTHORS",
+    "CHANGES.md",
+    "LICENSE",
+    "README.md",
+    "VERSION",
+    "package.json",
+    "lib/lox_evm.js",
+    "lib/lox_evm.d.ts"
+  ],
+  "bin": {
+    "lox_evm": "lib/lox_evm.js"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "test": "jest"
+  },
+  "keywords": [
+    "LOX_EVM",
+    "Ethereum",
+    "LOX"
+  ],
+  "author": "lox_evm.dev",
+  "authors": [
+    "Arto Bendiken <arto@near.org> (https://ar.to)"
+  ],
+  "license": "CC0-1.0",
+  "homepage": "https://github.com/lox_evm-is-near/lox_evm-cli",
+  "bugs": "https://github.com/lox_evm-is-near/lox_evm-cli/issues",
+  "repository": "https://github.com/lox_evm-is-near/lox_evm-cli.git",
+  "dependencies": {
+    "console-table-printer": "^2.9.0",
+    "tanya-evm":"^0.0.0",
+    "commander": "^7.2.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.0",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^14.14.37",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.24.0",
+    "jest": "^v27.0.0-next.8",
+    "prettier": "2.2.1",
+    "release-it": "^14.11.6",
+    "ts-jest": "^v27.0.0-next.11",
+    "typedoc": "^0.20.35",
+    "typescript": "^4.2.3"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "jest": {
+    "preset": "ts-jest/presets/default-esm",
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.[tj]sx?$": "ts-jest"
+    }
+  }
+}
